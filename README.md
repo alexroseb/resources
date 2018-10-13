@@ -1,13 +1,7 @@
-## Resource Pages
-
-Here is a list of best resources for web developers. Feel free to add your resources as well because sharing is caring.
-
----
-
 ## Table of Contents
 * [**General Resources for Learning Web Development**](generalResources.md): A page of mostly free resources for learning web development and coding in general.
 
-* [**Git and Github**](GitandGitHub_Resources): A page of resources on using Git and GitHub.
+* [**Git and Github**](GitandGitHub_Resources/Using_Git_and_GitHub.md): A page of resources on using Git and GitHub.
 
 * [**Contributing to Github**](GitandGitHub_Resources/Contributing_to_GitHub.md): How to contribute to GitHub.
 
@@ -25,10 +19,13 @@ Here is a list of best resources for web developers. Feel free to add your resou
  
 * [**YouTube channels**](YouTubeChannels_forLearning.md): A list of YouTube channels for learning web development and CS topics.
 
-
+<h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
 ---
 
 ## Contributors
 * [**List of Contributors**](CONTRIBUTORS.md): A page showing the GitHub usernames of all who have contributed to this open-source project! Make sure to add yourself and submit a pull request if you've contributed.
-
----
